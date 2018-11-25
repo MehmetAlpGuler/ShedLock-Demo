@@ -9,6 +9,7 @@ public class DemoJobTest {
         DemoJob job = new DemoJob();
         String s = job.increase("", 0);
         System.out.println("s = " + s);
+        assert s.equals("1");
     }
 
     @Test
@@ -16,6 +17,7 @@ public class DemoJobTest {
         DemoJob job = new DemoJob();
         String s = job.increase(null, 0);
         System.out.println("s = " + s);
+        assert s.equals("1");
     }
 
     @Test
@@ -23,5 +25,6 @@ public class DemoJobTest {
         DemoJob job = new DemoJob();
         String s = job.increase("0", 0);
         System.out.println("s = " + s);
+        assert s.equals("1");
     }
 }
